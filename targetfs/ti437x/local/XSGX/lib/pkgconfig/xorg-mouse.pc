@@ -1,0 +1,6 @@
+sdkdir=/home/a0850410/imgddk115/int2/img-ddk-linux-android/eurasia/eurasiacon/binary_omap_linux_xorg_release/target/usr/local/XSGX/include/xorg
+
+Name: xorg-mouse
+Description: X.Org mouse input driver for non-evdev OS'es
+Version: 1.9.1
+Cflags: -I${sdkdir}

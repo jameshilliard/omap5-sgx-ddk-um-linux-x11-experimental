@@ -1,0 +1,8 @@
+#extension GL_OES_EGL_image_external : enable
+varying mediump vec2 texCoordOutput;
+uniform samplerExternalOES texture;
+
+void main(void)
+{
+	gl_FragColor = texture2D(texture, texCoordOutput);
+}

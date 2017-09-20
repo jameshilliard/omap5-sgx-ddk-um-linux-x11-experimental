@@ -1,0 +1,18 @@
+prefix=/usr/local/XSGX
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+sysconfdir=${prefix}/etc
+localstatedir=${prefix}/var
+PACKAGE=fontconfig
+confdir=${sysconfdir}/fonts
+cachedir=${localstatedir}/cache/${PACKAGE}
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.11.94
+Requires:  freetype2
+Requires.private:  expat
+Libs: -L${libdir} -lfontconfig
+Libs.private: -L/home/a0850410/imgddk115/int2/img-ddk-linux-android/eurasia/eurasiacon/binary_omap_linux_xorg_release/target/usr/local/XSGX/lib -lexpat   -L/home/a0850410/imgddk115/int2/img-ddk-linux-android/eurasia/eurasiacon/binary_omap_linux_xorg_release/target/usr/local/XSGX/lib -lfreetype    
+Cflags: -I${includedir} -I/home/a0850410/imgddk115/int2/img-ddk-linux-android/eurasia/eurasiacon/binary_omap_linux_xorg_release/target/usr/local/XSGX/include   -I/home/a0850410/imgddk115/int2/img-ddk-linux-android/eurasia/eurasiacon/binary_omap_linux_xorg_release/target/usr/local/XSGX/include/freetype2    

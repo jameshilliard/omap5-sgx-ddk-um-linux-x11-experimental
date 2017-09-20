@@ -1,0 +1,14 @@
+
+// $Revision: 1.1 $
+
+attribute vec4 position;
+attribute vec2 texCoord;
+uniform mat4 transform;
+varying vec2 texCoordOutput;
+
+
+void main(void)
+{
+	texCoordOutput = texCoord;
+	gl_Position = position * transform;
+}
